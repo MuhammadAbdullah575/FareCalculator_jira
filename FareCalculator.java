@@ -109,10 +109,13 @@ public class FareCalculator {
             }
         });
         
-        departLabel = new JLabel("Departure City: ");
+        departLabel = new JLabel("Departure Province: ");
         departCombo = new JComboBox();
-        departCombo.addItem("Lahore");
-        departCombo.addItem("Peshawar");
+        departCombo.addItem("Punjab");
+        departCombo.addItem("Sindh");
+        departCombo.addItem("KPK");
+        departCombo.addItem("Balochistan");
+
         
         Class = new JLabel("Class");
         economy = new JCheckBox("Economy");
@@ -122,11 +125,12 @@ public class FareCalculator {
         bGroup.add(AC);
         
         
-        arrLabel = new JLabel("Arrival City: ");
+        arrLabel = new JLabel("Arrival Province: ");
         arrCombo = new JComboBox();
-        arrCombo.addItem("Islamabad");
-        arrCombo.addItem("Gujranwala");
-        arrCombo.addItem("Faisalabad");
+        arrCombo.addItem("Punjab");
+        arrCombo.addItem("Sindh");
+        arrCombo.addItem("Balochistan");
+        arrCombo.addItem("KPK");
         
         seatLabel = new JLabel("Total Seats");
         seatText = new JTextField("");
@@ -276,3 +280,4 @@ public class FareCalculator {
     }
     
 }
+
